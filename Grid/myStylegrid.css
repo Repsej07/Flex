@@ -1,0 +1,118 @@
+html{
+    overflow: hidden;
+    min-height: 660px;
+    min-width: none;
+    }
+    .container{
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 9vh 77vh 9vh;
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-areas: 
+    "item-1 item-1 item-1 item-1 item-1"
+    "item-2 item-3 item-3 item-3 item-4"
+    "item-5 item-5 item-5 item-5 item-5";
+    }
+    
+    .item-1 {
+        display: grid;
+        grid-template-columns: 3vw 68vw 25vw ;
+        grid-area: item-1;
+        background-color: 4caf50;
+        align-content: center;
+    }
+    nav{
+        grid-column-start: 3;
+        justify-self: end;
+    }
+    a{
+        margin-right: 5px;
+    }
+    .icon{
+        grid-column-start: 2;
+        align-self: center;
+    }
+    
+    .item-2{
+    grid-area: item-2;
+    background-color: f4f4f4;
+    }
+    .item-3{
+    grid-area: item-3;
+    background-color: e4e4e4;
+    }
+    .text-3{
+        margin-left: 5px;
+    }
+    .item-4{
+    grid-area: item-4;
+    background-color: f4f4f4;
+    
+    }
+    .text-4{
+        margin-left: 5px;
+    }
+    .item-5{
+    grid-area: item-5;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: 4caf50;
+    justify-items:center;
+    align-items: center;
+    }
+    @media screen and (min-width:222px), (min-height:730px){
+        body{
+            min-width: 222px;
+            min-height: 730px;
+        }
+    }
+    @media screen and (max-width: 700px){
+        html{
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+        .container{
+            grid-template-columns: 1fr;
+            grid-template-rows: 10vh 30vh 60vh 50vh 15vh;
+            grid-template-areas: 
+            "item-1"
+            "item-2"
+            "item-3"
+            "item-4"
+            "item-5";
+        }
+        .icon{
+            align-self: center;
+        }
+        .item-1{
+            grid-template-columns: 3vw 67vw 25vw;
+        }
+    
+        .item-2, .item-3, .item-4{
+            max-width: 100vw;
+        }
+        .item-5{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr ;
+    
+        }
+        .cr{
+            grid-column-start: 1;
+            grid-column-end: max-content;
+        }
+        .home{
+            grid-row-start: 2;
+            grid-column-start: 1;
+            grid-column-end: max-content;
+        }
+        .email{
+            grid-row-start: 3;
+            grid-column-start: 1;
+            grid-column-end: max-content;
+    
+        }
+    }
+    
