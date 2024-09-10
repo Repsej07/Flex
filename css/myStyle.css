@@ -5,7 +5,10 @@ html{
 .container{
 display: flex;
 flex-direction: row;
-min-height: 87vh;
+min-height: 86vh;
+row-gap: 1vh;
+margin-top: 1vh;
+margin-bottom: 1vh;
 }
 
 .item-1{
@@ -14,7 +17,6 @@ min-height: 87vh;
     background-color: #4caf50; /*background color of the item*/
     align-items: center;
     min-height: 5vh; 
-    margin-bottom: 1vh;
     flex-grow: 2;
 }
 .menu.a{
@@ -56,10 +58,42 @@ flex-grow: 2;
 }
 .item-5{
 display: flex;
-margin-top: 1vh;
 justify-content: space-between;
 background-color: #4caf50;
 align-items: center;
 min-height: 5vh;
 flex-grow: 2;
+}
+@media screen and (max-width: 840px){
+    html{
+    overflow: auto;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .item-2{
+        min-width: 100%;
+        max-height: 50vh;
+        flex-wrap: nowrap;
+    }
+    .item-3{
+        min-width: 100%;
+        max-height: 50vh;
+        flex-wrap: nowrap;
+    }
+    .item-4{
+        min-width: 100%;
+
+        max-height: 50vh;
+        flex-wrap: nowrap;
+    }
+    .item-5{
+        min-width: 100%;
+        min-height: 100px;
+        flex-direction: column;
+        margin-top: 10px;
+        padding: 2px;
+    }
+
+    
 }
