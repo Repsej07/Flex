@@ -1,40 +1,67 @@
-.container {
-    display: flex;
-    height: 100vh;
+html{
+    overflow: hidden;
+}
 
-    gap: 25px;
+.container{
+display: flex;
+flex-direction: row;
+min-height: 85vh;
+}
+
+.item-1{
+    display: flex; /*makes the item display as flex-box*/
+    justify-content: space-between; /*aligns the items in the flex-box to the right and left*/
+    background-color: #4caf50; /*background color of the item*/
+    align-items: center;
+    min-height: 5vh; 
+    margin-bottom: 1vh;
+    font-size: 1vw;
+}
+.menu.a{
+    display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-content: space-around;
+    margin-right: 10px
+
+}
+.item-2{
+display: flex;
+flex-wrap: wrap;
+background-color: red;
+min-width: 20vh;
+column-gap: 1vh;
+margin-right: 1vh;
+flex-direction: column;
+font-size: 1vw;
+}
+.ul{
+font-size: 2vw;
+}
+.item-3{
+display: flex;
+flex-wrap: wrap;
+background-color: red;
+min-width: 40vh;
+column-gap: 1vh;
+margin-right: 1vh;
+flex-direction: column;
+font-size: 1vw;
 }
 
-.sidebar-l {
-    width: 280px;
-    height: 360px;
-    background-color: skyblue;
-    border: 2px solid black;
+.item-4{
+display: flex;
+flex-wrap: wrap;
+background-color: red;
+min-width: 20vh;
+flex-direction: column;
+font-size: 1vw;
 
-    display: flex;
-    flex-grow: 1;
-    align-self: flex-start;
 }
-
-.content {
-    width: 280px;
-    height: 360px;
-    background-color: skyblue;
-    border: 2px solid black;
-
-    display: flex;
-    flex-grow: 4;
-}
-.sidebar-r {
-    width: 280px;
-    height: 360px;
-    background-color: skyblue;
-    border: 2px solid black;
-
-    display: flex;
-
-    flex-grow: 2;
+.item-5{
+display: flex;
+margin-top: 1vh;
+justify-content: space-between;
+background-color: #4caf50;
+align-items: center;
+min-height: 5vh;
+font-size: 1vw;
 }
