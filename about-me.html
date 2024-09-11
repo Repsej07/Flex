@@ -1,31 +1,36 @@
-    <html lang="en" class="focus-outline-visible">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Webpage Layout</title>
-            <link rel="stylesheet" href="css/myStyle.css">
-        </head>
-        <body>
-            <header>
-                <div class="icon">&#10003;</div>
-                <div class="menu">
-                    <a href="index.html">Home</a>
-                    <a href="about-me.html">About</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-            </header>
-            <main>
-                <aside class="sidebar">
-                    <h2>Menu</h2>
-                    <ul>
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
-                    </ul>
-                </aside>
-                <section class="content">
-                    <h1>About Me</h1>
-                    <p>House hen chinchillas in barn livestock cat hogs
+<html lang="en" class="focus-outline-visible">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Webpage Flexbox Layout</title>
+        <link rel="stylesheet" href="css/myStyle.css">
+    </head>
+    <body>
+        <header>
+        <div class="item-1">
+            <div class="icon" style="margin-left: 1vh;">&#10003;</div>
+            <div class="menu">
+                <a href="index.html" style=" margin-right: 1vw;">Home</a>
+                <a href="about-me.html" style=" margin-right: 1vw;">About</a>
+                <a href="contact.html" style=" margin-right: 1vw;">Contact</a>
+            </div>
+        </header>
+
+
+        <div class="container">
+            <div class="item-2">
+                <h2 style="margin-left: 1vw;">Menu</h2>
+                <ul class="ul">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+            </div>
+            <div class="item-3">
+                <h1 style="margin-left: 1vw;">About me</h1>
+                <p style="margin-left: 1vw;">Hier vertellen wat er nu speelt/veranderd is.</p>
+                <p style="margin-left: 1vw;">
+                    House hen chinchillas in barn livestock cat hogs
                     chicks trucks. Blue berries pigeons buzz and bean
                     prairie dogs nails at est. Fertilizer buzz, purr
                     meow cheep chinchillas squeak, seeds maple syrup
@@ -33,29 +38,40 @@
                     feed, jelly peppers at plow basil swather, cat
                     weathervane grain trucks, hoot pony robins peacocks
                     an kale. In eggplant, quonset is grain bins,
-                    grain truck./p>
-                </section>
-                <aside class="sidebar">
-                    <h2>Events List</h2>
-                    <ul>
-                        <li>Event 1</li>
-                        <li>Event 2</li>
-                        <li>Event 3</li>
-                    </ul>
-                </aside>
-            </main>
-            <footer>
-                <!-- &copy; -->
-                <div>© 2024 Windesheim</div>
-                <div class="breadcrumbs">Home &gt; Section &gt; Page</div>
-                <div>Email: info@example.com</div>
-            </footer>
-        </body>
-    <nav></nav>
-    </html>
+                    grain truck.
+                </p>
+            </div>
+            <div class="item-4">
+                <h2 style="margin-left: 1vw;">Geleerd</h2>
+                <dl style="">
+                    <dt style="margin-left: 1vw;"><strong>box-shadow</strong></dt>
+                    <dd style="margin-left: 1vw;"><i>box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;</i></dd>
+                    <dt style="margin-left: 1vw;"><strong>description-list</strong></dt>
+                    <dd style="margin-left: 1vw;">
+                        <i>
+                            &lt;dl&gt; tag defineert een description lijst.<br>
+                            &lt;dt&gt; tag defineert een term/name in een description lijst.<br>
+                            &lt;dd&gt; tag wordt gebruikt om een beschrijving te geven van een term/name in een description lijst.
+                        </i>
+                    </dd>
+                    <dt style="margin-left: 1vw;">Event 1</dt>
+                    <dd>Event 2</dd>
+                </dl>
+            </div>
+        </div>
+        <footer class="item-5">
+            <!-- &copy; -->
+            <div style="margin-left: 15px;">© 2024 Windesheim</div>
+            <div class="breadcrumbs">About me </div>
+            <div style="margin-right: 15px;">Email: info@example.com</div>
+        </footer>
+    </body>
+<nav></nav>
+</html>
 <!--
-    Lucas - Pizza Hawai
-    Renee - Peperoni
-    Ryan - Salami
+Intro 2024:
+Lucas - Pizza Hawai
+Renee - Peperoni
+Ryan - Salami
 
 -->
