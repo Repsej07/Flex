@@ -26,23 +26,15 @@ a{
     padding: 5px;
     border: 1px solid white;
     border-radius: 3px;
-    background-color: ;
 }
 a:hover{
     background-color: white;
     color: #4caf50;
 }
-.menu.a{
-    display: flex;
-    flex-direction: row;
-    margin-right: 10px;
-
-
-}
 .item-2{
 display: flex;
 flex-wrap: wrap;
-background-color: f4f4f4;
+background-color: #f4f4f4;
 min-width: 20vh;
 column-gap: 1vh;
 margin-right: 1vh;
@@ -52,7 +44,7 @@ flex-grow: 1;
 .item-3{
 display: flex;
 flex-wrap: wrap;
-background-color: e4e4e4;
+background-color: #e4e4e4;
 min-width: 40vh;
 column-gap: 1vh;
 margin-right: 1vh;
@@ -64,7 +56,7 @@ flex-grow: 4;
 .item-4{
 display: flex;
 flex-wrap: wrap;
-background-color: f4f4f4;
+background-color: #f4f4f4;
 min-width: 20vh;
 flex-direction: column;
 flex-grow: 2;
